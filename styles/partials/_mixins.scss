@@ -1,0 +1,24 @@
+/*mixin and style functions styles*/
+$darkest : #1c1c1c;
+$lightest :#fff;
+$lightblue:#59dac3;
+$blue:#2ac5fb;
+$pink: #fe1d62;
+$green: #b6d546;
+$darkgreen:#0cad6b;
+$purple: #714af2;
+$darkblue: #3b9fb3;
+// i know i should use the colour but as this is not shared with anyone im doing it to save time
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+@mixin secondText($sizeValue,$weight) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $sizeValue;
+    font-weight: $weight;
+    color: white;
+}
+

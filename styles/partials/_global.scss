@@ -1,0 +1,171 @@
+/*global styles*/
+html { font-size: 62.5%; }
+
+ .visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+}
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+main, section {
+    padding: 100px 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+     @include fontSize(4.8rem);
+     text-transform: uppercase;
+     margin: 0;
+    
+}
+h2 {
+    @include secondText(14px,600);
+    margin: 0;
+    color: $lightblue; 
+    //change later
+}
+h3 {
+    font-size: 2.2rem;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+p { 
+    @include fontSize(1.6rem);
+    line-height: 25px;
+}
+.styledButton {
+    background: transparent;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px 0px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    width: 200px;
+    text-align: center;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+ul {
+    padding:0;
+}
+li ul {
+        background-color: #1c1c1c;
+        display:none;
+        position: absolute;
+        margin:0 auto;
+        padding: 5px;
+        
+        
+	li {
+            float: none;
+            margin:0 auto;
+	}	
+}
+li:hover ul {
+        display: block;
+       //width:100%;
+}
+.mainNav ul li ul {
+     width:100%;
+}
+a {
+        display:block;		
+}
+.slider {
+        background: rgba(218, 217, 217, 0.3);
+        font-size: 2.5rem;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        border:none;
+        margin: auto 25px;
+        .fa {
+            color: white;
+            margin: 0 auto;
+        }
+}
+
+.title .browseLink a {
+    color: $lightblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+        color:$purple;
+    }
+}
+.lightBlue {
+    color: $lightblue;
+}
+.darkBlue {
+    color: $darkblue;
+}
+.borderLightBlue {
+    border:2px dotted $lightblue;
+}
+.pink {
+    color:$pink;
+}
+.borderPink {
+    border:2px dotted $pink;
+}
+.green {
+    color:$green;
+}
+.borderGreen {
+    border:2px dotted $green;
+}
+.darkGreen {
+    color:$darkgreen;
+}
+
+.purple {
+    color:$purple;
+}
+.blue {
+    color:$blue;
+}
+.borderDarkBlue {
+    border:2px dotted $blue;
+}
+.fullLogo img {
+            margin: 10px 20px 10px 0px;
+            max-height: 40px;
+        }

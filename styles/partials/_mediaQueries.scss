@@ -1,0 +1,279 @@
+
+
+// @media screen and ( min-width: 481px ) {
+//   /* disable Flickity for large devices */
+//   .carousel:after {
+//     content: '';
+//   }
+// }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  
+    .sliderHeader .wrapper {
+        h1, p {
+            width: 100%;
+        }
+    }
+    .navHeader ul li {
+        margin-right: 0px;
+    }
+    .subscribe .wrapper {
+        width: 80%
+    }
+    .wrapper .container {
+    justify-content: space-around;
+    .courseCard {
+        width: 30%; 
+        }
+    }
+    .searchCourses .wrapper {
+            width: 90%;
+            .title {
+                width: 90%;
+            }
+    }
+    // .searchCourses form {
+    //     flex-wrap: wrap;     
+    // }
+     
+    .studentFeedback .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .testament {
+            width: 75%;
+        }
+    }
+    button.styledButton.smallField {
+           width:125px;
+        } 
+    .mainFooter .wrapper {
+        width: 90%;
+        .container {
+            width: 95%;   
+            .footerList {
+            width: 46%;
+            }
+        }
+    }
+}
+    .creditsFooter .wrapper .slider {
+           bottom:0%;
+        }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px){ 
+    .menu li .fa, .navHeader ul li:hover ul {
+        display: none;
+    }
+    .header li a:hover,
+.header .menu-btn:hover {
+    color: $pink;
+}
+
+/* menu */
+
+.header .menu {
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 100%;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.login {
+    width:50%;
+}
+
+.title {
+width: 75%;
+}
+.join .card {
+    width: 46%;
+}
+.wrapper .container {
+justify-content: space-around;
+.courseCard {
+    width: 40%; 
+    }
+}
+.searchCourses form {
+    flex-wrap: wrap;
+        
+}
+.smallField {
+    width:18%;
+    }
+    .largeField {
+    width: 28%;
+    }
+button.styledButton {
+        width:125px;
+        //margin-top: 25px;
+    } 
+.studentFeedback  .container {
+
+    .testament {
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        .photo {
+            height: 150px;
+            width: 150px;
+        }
+        .quote {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+    .newsletter .wrapper input {
+        width: 45%;
+    }
+}
+@media (max-device-width : 600px) 
+and (orientation : landscape) {
+    h1 {
+    font-size: 3.0rem;
+    }
+}
+@media (max-width: 550px) {
+    .wrapper .container .courseCard {
+    width: 45%;
+    }
+    .searchCourses form {
+        flex-wrap: wrap;
+    
+        .smallField {
+            width:98%;
+        }
+        .largeField {
+            width: 98%;
+        }
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.8rem;
+    }
+    .login {
+    width: 65%;}
+    .sliderHeader .slider {
+        display: none;
+    }
+    ul {
+        margin: 0;
+    }
+    .logoHeader .wrapper {
+        flex-direction: column;
+    }
+    .wrapper {
+        width: 98%;
+    }
+    section, main {
+    padding: 50px 0px;
+    }
+    .join .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .subscribe .wrapper, .title {
+        width: 90%
+    }
+    
+    .wrapper .container .courseCard {
+    width: 70%;
+    }
+    .courses .container {
+        display: block;
+        .courseCard {
+            display: block;
+            width: 50%;
+        }
+    }
+    .studentFeedback  .container {
+    
+        .testament {
+            width: 90%;
+        }
+    }
+    .mainFooter .wrapper {
+    
+        .container .footerList {
+                width: 90%;
+                }
+        }
+    .newsletter .wrapper input {
+    width: 80%;
+    margin-bottom: 25px;
+    }
+    .creditsFooter .wrapper .slider {
+    top: -20%;
+    }
+}
